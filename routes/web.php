@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/message', [MessageController::class, 'index']);
-Route::post('/message/send', [MessageController::class, 'sendMessage']);
+Route::post('/message/send', [MessageController::class, 'sendMessage'])->name('sendMessage');
